@@ -10,10 +10,10 @@ import {
   MousePointer,
   Smartphone,
   Monitor
-} from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+ } from "lucide-react";
+ import { Badge } from "@/components/ui/badge";
 
-const Analytics = () => {
+ const Analytics = () => {
   const performanceMetrics = [
     {
       title: "Page Views",
@@ -153,6 +153,6 @@ const Analytics = () => {
       </div>
     </DashboardLayout>
   );
-};
+ };
 
-export default Analytics;
+ export default Analytics;

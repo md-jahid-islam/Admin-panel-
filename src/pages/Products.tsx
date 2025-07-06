@@ -13,9 +13,9 @@ import {
   Star,
   Eye,
   ShoppingCart
-} from "lucide-react";
+ } from "lucide-react";
 
-const Products = () => {
+ const Products = () => {
   const products = [
     {
       id: "PROD-001",
@@ -93,8 +93,7 @@ const Products = () => {
             <p className="text-muted-foreground">Manage your product inventory and catalog.</p>
           </div>
           <Button className="bg-gradient-primary hover:opacity-90 text-white shadow-medium">
-            <Plus className="h-4 w-4 mr-2" />
-            Add Product
+          <Plus className="h-4 w-4 mr-2" />Add Product
           </Button>
         </div>
 
@@ -124,7 +123,7 @@ const Products = () => {
                   <p className="text-xs text-muted-foreground">87.3% of products</p>
                 </div>
                 <div className="h-12 w-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                  <Package className="h-6 w-6 text-white" />
+                <Package className="h-6 w-6 text-white" />
                 </div>
               </div>
             </CardContent>
@@ -139,7 +138,7 @@ const Products = () => {
                   <p className="text-xs text-warning">Requires attention</p>
                 </div>
                 <div className="h-12 w-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                  <Package className="h-6 w-6 text-white" />
+                <Package className="h-6 w-6 text-white" />
                 </div>
               </div>
             </CardContent>
@@ -154,7 +153,7 @@ const Products = () => {
                   <p className="text-xs text-destructive">Need restocking</p>
                 </div>
                 <div className="h-12 w-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                  <Package className="h-6 w-6 text-white" />
+                <Package className="h-6 w-6 text-white" />
                 </div>
               </div>
             </CardContent>
@@ -167,10 +166,7 @@ const Products = () => {
             <div className="flex flex-col md:flex-row gap-4">
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-                <Input
-                  placeholder="Search products by name, ID, or category..."
-                  className="pl-10 bg-background/50 border-border/50 focus:border-primary"
-                />
+                <Input placeholder="Search products by name, ID, or category..." className="pl-10 bg-background/50 border-border/50 focus:border-primary"/>
               </div>
               <Button variant="outline" className="flex items-center space-x-2">
                 <Filter className="h-4 w-4" />
@@ -187,7 +183,7 @@ const Products = () => {
               <CardContent className="p-6">
                 <div className="flex items-start justify-between mb-4">
                   <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center">
-                    <Package className="h-8 w-8 text-muted-foreground" />
+                  <Package className="h-8 w-8 text-muted-foreground" />
                   </div>
                   <Badge variant={getStatusVariant(product.status)}>
                     {product.status}
@@ -220,13 +216,13 @@ const Products = () => {
                   <span className="text-sm text-muted-foreground">{product.id}</span>
                   <div className="flex items-center space-x-2">
                     <Button variant="ghost" size="sm">
-                      <Eye className="h-4 w-4" />
+                    <Eye className="h-4 w-4" />
                     </Button>
                     <Button variant="ghost" size="sm">
-                      <Edit className="h-4 w-4" />
+                    <Edit className="h-4 w-4" />
                     </Button>
                     <Button variant="ghost" size="sm">
-                      <Trash2 className="h-4 w-4" />
+                    <Trash2 className="h-4 w-4" />
                     </Button>
                   </div>
                 </div>
@@ -244,28 +240,28 @@ const Products = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="text-center p-4 bg-background/50 rounded-lg">
                 <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-2">
-                  <Package className="h-6 w-6 text-white" />
+                <Package className="h-6 w-6 text-white" />
                 </div>
                 <h4 className="font-medium text-foreground">Electronics</h4>
                 <p className="text-sm text-muted-foreground">847 products</p>
               </div>
               <div className="text-center p-4 bg-background/50 rounded-lg">
                 <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-2">
-                  <Package className="h-6 w-6 text-white" />
+                <Package className="h-6 w-6 text-white" />
                 </div>
                 <h4 className="font-medium text-foreground">Accessories</h4>
                 <p className="text-sm text-muted-foreground">234 products</p>
               </div>
               <div className="text-center p-4 bg-background/50 rounded-lg">
                 <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-2">
-                  <Package className="h-6 w-6 text-white" />
+                <Package className="h-6 w-6 text-white" />
                 </div>
                 <h4 className="font-medium text-foreground">Clothing</h4>
                 <p className="text-sm text-muted-foreground">123 products</p>
               </div>
               <div className="text-center p-4 bg-background/50 rounded-lg">
                 <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-2">
-                  <Package className="h-6 w-6 text-white" />
+                <Package className="h-6 w-6 text-white" />
                 </div>
                 <h4 className="font-medium text-foreground">Home & Garden</h4>
                 <p className="text-sm text-muted-foreground">43 products</p>
@@ -276,6 +272,6 @@ const Products = () => {
       </div>
     </DashboardLayout>
   );
-};
+ };
 
-export default Products;
+ export default Products;

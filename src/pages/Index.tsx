@@ -8,11 +8,11 @@ import {
   TrendingUp,
   ArrowUpIcon,
   ArrowDownIcon
-} from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+ } from "lucide-react";
+ import { Badge } from "@/components/ui/badge";
+ import { Button } from "@/components/ui/button";
 
-const Index = () => {
+ const Index = () => {
   const metrics = [
     {
       title: "Total Revenue",
@@ -115,9 +115,7 @@ const Index = () => {
                         className={
                           order.status === "Completed" ? "bg-success text-success-foreground" :
                           order.status === "Processing" ? "bg-warning text-warning-foreground" :
-                          ""
-                        }
-                      >
+                          ""}>
                         {order.status}
                       </Badge>
                       <p className="font-medium text-foreground">{order.amount}</p>
@@ -137,8 +135,8 @@ const Index = () => {
           <CardContent>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <Button variant="outline" className="h-16 flex-col space-y-2">
-                <Users className="h-5 w-5" />
-                <span>Add User</span>
+              <Users className="h-5 w-5" />
+              <span>Add User</span>
               </Button>
               <Button variant="outline" className="h-16 flex-col space-y-2">
                 <ShoppingCart className="h-5 w-5" />
@@ -158,6 +156,6 @@ const Index = () => {
       </div>
     </DashboardLayout>
   );
-};
+ };
 
-export default Index;
+ export default Index;

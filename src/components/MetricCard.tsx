@@ -2,21 +2,18 @@ import { LucideIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
-interface MetricCardProps {
+ interface MetricCardProps {
   title: string;
   value: string;
   change: string;
   trend: "up" | "down" | "neutral";
   icon: LucideIcon;
   className?: string;
-}
+ }
 
-export function MetricCard({ title, value, change, trend, icon: Icon, className }: MetricCardProps) {
+ export function MetricCard({ title, value, change, trend, icon: Icon, className }: MetricCardProps) {
   return (
-    <Card className={cn(
-      "bg-gradient-card shadow-soft border-border/50 hover:shadow-medium transition-all duration-200",
-      className
-    )}>
+    <Card className={cn( "bg-gradient-card shadow-soft border-border/50 hover:shadow-medium transition-all duration-200",className)}>
       <CardContent className="p-6">
         <div className="flex items-center justify-between">
           <div className="space-y-2">
@@ -35,10 +32,10 @@ export function MetricCard({ title, value, change, trend, icon: Icon, className 
             </div>
           </div>
           <div className="h-12 w-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-            <Icon className="h-6 w-6 text-white" />
+          <Icon className="h-6 w-6 text-white" />
           </div>
         </div>
       </CardContent>
     </Card>
   );
-}
+ }

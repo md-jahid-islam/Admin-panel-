@@ -13,9 +13,9 @@ import {
   BarChart3,
   PieChart,
   Filter
-} from "lucide-react";
+ } from "lucide-react";
 
-const Reports = () => {
+ const Reports = () => {
   const reports = [
     {
       name: "Sales Report",
@@ -100,11 +100,11 @@ const Reports = () => {
                     <p className="text-sm font-medium text-muted-foreground">{stat.label}</p>
                     <p className="text-2xl font-bold text-foreground">{stat.value}</p>
                     <p className={`text-xs ${stat.trend === 'up' ? 'text-success' : 'text-destructive'}`}>
-                      {stat.change} vs last month
+                    {stat.change} vs last month
                     </p>
                   </div>
                   <div className="h-12 w-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                    <TrendingUp className="h-6 w-6 text-white" />
+                  <TrendingUp className="h-6 w-6 text-white" />
                   </div>
                 </div>
               </CardContent>
@@ -117,12 +117,11 @@ const Reports = () => {
           <Card className="bg-gradient-card shadow-soft border-border/50">
             <CardContent className="p-6 text-center">
               <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4">
-                <BarChart3 className="h-6 w-6 text-white" />
+              <BarChart3 className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Sales Reports</h3>
               <p className="text-muted-foreground text-sm mb-4">Track revenue, sales trends, and performance metrics</p>
-              <Button variant="outline" className="w-full">
-                Generate Sales Report
+              <Button variant="outline" className="w-full"> Generate Sales Report
               </Button>
             </CardContent>
           </Card>
@@ -130,12 +129,11 @@ const Reports = () => {
           <Card className="bg-gradient-card shadow-soft border-border/50">
             <CardContent className="p-6 text-center">
               <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Users className="h-6 w-6 text-white" />
+              <Users className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Customer Reports</h3>
               <p className="text-muted-foreground text-sm mb-4">Analyze customer behavior and demographics</p>
-              <Button variant="outline" className="w-full">
-                Generate Customer Report
+              <Button variant="outline" className="w-full"> Generate Customer Report
               </Button>
             </CardContent>
           </Card>
@@ -143,12 +141,11 @@ const Reports = () => {
           <Card className="bg-gradient-card shadow-soft border-border/50">
             <CardContent className="p-6 text-center">
               <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4">
-                <PieChart className="h-6 w-6 text-white" />
+              <PieChart className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Analytics Reports</h3>
               <p className="text-muted-foreground text-sm mb-4">Deep dive into website and app analytics</p>
-              <Button variant="outline" className="w-full">
-                Generate Analytics Report
+              <Button variant="outline" className="w-full"> Generate Analytics Report
               </Button>
             </CardContent>
           </Card>
@@ -172,17 +169,17 @@ const Reports = () => {
                 <div key={index} className="flex items-center justify-between p-4 bg-background/50 rounded-lg hover:bg-background/70 transition-colors">
                   <div className="flex items-center space-x-4">
                     <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                      <report.icon className="h-5 w-5 text-white" />
+                    <report.icon className="h-5 w-5 text-white" />
                     </div>
                     <div>
                       <h4 className="font-medium text-foreground">{report.name}</h4>
                       <p className="text-sm text-muted-foreground">{report.description}</p>
                       <div className="flex items-center space-x-2 mt-1">
                         <Badge variant="outline" className="text-xs">
-                          {report.type}
+                        {report.type}
                         </Badge>
                         <Badge variant={getStatusVariant(report.status)} className="text-xs">
-                          {report.status}
+                        {report.status}
                         </Badge>
                       </div>
                     </div>
@@ -191,16 +188,15 @@ const Reports = () => {
                     <div className="text-right">
                       <p className="text-sm text-muted-foreground">Last generated</p>
                       <p className="text-sm font-medium text-foreground flex items-center space-x-1">
-                        <Calendar className="h-3 w-3" />
-                        <span>{report.lastGenerated}</span>
+                      <Calendar className="h-3 w-3" />
+                      <span>{report.lastGenerated}</span>
                       </p>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Button variant="ghost" size="sm" disabled={report.status !== "Ready"}>
-                        <Download className="h-4 w-4" />
+                      <Download className="h-4 w-4" />
                       </Button>
-                      <Button variant="outline" size="sm">
-                        View
+                      <Button variant="outline" size="sm"> View
                       </Button>
                     </div>
                   </div>
@@ -214,13 +210,13 @@ const Reports = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <Card className="bg-gradient-card shadow-soft border-border/50">
             <CardHeader>
-              <CardTitle className="text-foreground">Revenue Trend</CardTitle>
+            <CardTitle className="text-foreground">Revenue Trend</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="h-[300px] bg-muted/30 rounded-lg flex items-center justify-center">
                 <div className="text-center">
-                  <BarChart3 className="h-12 w-12 text-muted-foreground mx-auto mb-2" />
-                  <p className="text-muted-foreground">Revenue chart would display here</p>
+                <BarChart3 className="h-12 w-12 text-muted-foreground mx-auto mb-2" />
+                <p className="text-muted-foreground">Revenue chart would display here</p>
                 </div>
               </div>
             </CardContent>
@@ -228,13 +224,13 @@ const Reports = () => {
 
           <Card className="bg-gradient-card shadow-soft border-border/50">
             <CardHeader>
-              <CardTitle className="text-foreground">Sales by Category</CardTitle>
+            <CardTitle className="text-foreground">Sales by Category</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="h-[300px] bg-muted/30 rounded-lg flex items-center justify-center">
                 <div className="text-center">
-                  <PieChart className="h-12 w-12 text-muted-foreground mx-auto mb-2" />
-                  <p className="text-muted-foreground">Category breakdown chart would display here</p>
+                <PieChart className="h-12 w-12 text-muted-foreground mx-auto mb-2" />
+                <p className="text-muted-foreground">Category breakdown chart would display here</p>
                 </div>
               </div>
             </CardContent>
@@ -243,6 +239,6 @@ const Reports = () => {
       </div>
     </DashboardLayout>
   );
-};
+ };
 
-export default Reports;
+ export default Reports;

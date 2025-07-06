@@ -15,9 +15,9 @@ import {
   X,
   Plus,
   TrendingUp
-} from "lucide-react";
+ } from "lucide-react";
 
-const Payments = () => {
+ const Payments = () => {
   const payments = [
     {
       id: "PAY-3210",
@@ -106,8 +106,7 @@ const Payments = () => {
             <p className="text-muted-foreground">Process and manage customer payments.</p>
           </div>
           <Button className="bg-gradient-primary hover:opacity-90 text-white shadow-medium">
-            <Plus className="h-4 w-4 mr-2" />
-            Process Payment
+          <Plus className="h-4 w-4 mr-2" /> Process Payment
           </Button>
         </div>
 
@@ -146,8 +145,7 @@ const Payments = () => {
             <div className="flex justify-end mt-6 space-x-2">
               <Button variant="outline">Cancel</Button>
               <Button className="bg-gradient-primary hover:opacity-90 text-white">
-                <CreditCard className="h-4 w-4 mr-2" />
-                Process Payment
+              <CreditCard className="h-4 w-4 mr-2" /> Process Payment
               </Button>
             </div>
           </CardContent>
@@ -164,7 +162,7 @@ const Payments = () => {
                   <p className="text-xs text-success">+12.5% from yesterday</p>
                 </div>
                 <div className="h-12 w-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                  <DollarSign className="h-6 w-6 text-white" />
+                <DollarSign className="h-6 w-6 text-white" />
                 </div>
               </div>
             </CardContent>
@@ -194,7 +192,7 @@ const Payments = () => {
                   <p className="text-xs text-muted-foreground">Awaiting confirmation</p>
                 </div>
                 <div className="h-12 w-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                  <Clock className="h-6 w-6 text-white" />
+                <Clock className="h-6 w-6 text-white" />
                 </div>
               </div>
             </CardContent>
@@ -209,7 +207,7 @@ const Payments = () => {
                   <p className="text-xs text-destructive">Require attention</p>
                 </div>
                 <div className="h-12 w-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                  <AlertCircle className="h-6 w-6 text-white" />
+                <AlertCircle className="h-6 w-6 text-white" />
                 </div>
               </div>
             </CardContent>
@@ -222,10 +220,7 @@ const Payments = () => {
             <div className="flex flex-col md:flex-row gap-4">
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-                <Input
-                  placeholder="Search payments by ID, customer, or amount..."
-                  className="pl-10 bg-background/50 border-border/50 focus:border-primary"
-                />
+                <Input placeholder="Search payments by ID, customer, or amount..." className="pl-10 bg-background/50 border-border/50 focus:border-primary"/>
               </div>
               <Button variant="outline" className="flex items-center space-x-2">
                 <Filter className="h-4 w-4" />
@@ -283,6 +278,5 @@ const Payments = () => {
       </div>
     </DashboardLayout>
   );
-};
-
-export default Payments;
+ };
+ export default Payments;

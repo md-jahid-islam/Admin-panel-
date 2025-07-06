@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Frox Dashboard Design System - Modern Admin Panel Colors */
-
-@layer base {
+ /* Frox Dashboard Design System - Modern Admin Panel Colors */
+ @layer base {
   :root {
     --background: 248 250% 98%;
     --foreground: 213 27% 15%;
@@ -130,9 +129,9 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-}
+ }
 
-@layer base {
+ @layer base {
   * {
     @apply border-border;
   }
@@ -140,4 +139,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
+ }

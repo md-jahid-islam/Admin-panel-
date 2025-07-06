@@ -1,11 +1,11 @@
 import { DashboardSidebar } from "./DashboardSidebar";
 import { DashboardHeader } from "./DashboardHeader";
 
-interface DashboardLayoutProps {
+ interface DashboardLayoutProps {
   children: React.ReactNode;
-}
+ }
 
-export function DashboardLayout({ children }: DashboardLayoutProps) {
+ export function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
     <div className="min-h-screen bg-background flex">
       <DashboardSidebar />
@@ -13,10 +13,10 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
         <DashboardHeader />
         <main className="flex-1 overflow-y-auto">
           <div className="p-6">
-            {children}
+          {children}
           </div>
         </main>
       </div>
     </div>
   );
-}
+ }

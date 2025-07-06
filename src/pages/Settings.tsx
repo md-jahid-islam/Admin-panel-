@@ -16,9 +16,9 @@ import {
   Globe,
   Database,
   Key
-} from "lucide-react";
+ } from "lucide-react";
 
-const Settings = () => {
+ const Settings = () => {
   return (
     <DashboardLayout>
       <div className="space-y-6">
@@ -170,8 +170,7 @@ const Settings = () => {
                   <Label htmlFor="confirmPassword">Confirm New Password</Label>
                   <Input id="confirmPassword" type="password" />
                 </div>
-                <Button variant="outline">
-                  Update Password
+                <Button variant="outline"> Update Password
                 </Button>
                 <Separator />
                 <div className="flex items-center justify-between">
@@ -180,8 +179,7 @@ const Settings = () => {
                     <p className="text-sm text-muted-foreground">Add an extra layer of security to your account</p>
                   </div>
                   <Button variant="outline" size="sm">
-                    <Key className="h-4 w-4 mr-2" />
-                    Enable 2FA
+                    <Key className="h-4 w-4 mr-2" /> Enable 2FA
                   </Button>
                 </div>
               </CardContent>
@@ -257,6 +255,6 @@ const Settings = () => {
       </div>
     </DashboardLayout>
   );
-};
+ };
 
-export default Settings;
+ export default Settings;

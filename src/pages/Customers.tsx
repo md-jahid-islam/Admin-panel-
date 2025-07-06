@@ -16,9 +16,9 @@ import {
   Star,
   Edit,
   Trash2
-} from "lucide-react";
+ } from "lucide-react";
 
-const Customers = () => {
+ const Customers = () => {
   const customers = [
     {
       id: "CUST-001",
@@ -48,18 +48,18 @@ const Customers = () => {
       id: "CUST-003",
       name: "Mike Johnson",
       email: "mike@example.com",
-      phone: "+1 (555) 345-6789",
-      location: "Chicago, IL",
+      phone: "+8801540587085",
+      location: "Dhaka, Uttara",
       joinDate: "2023-07-10",
       totalOrders: 15,
-      totalSpent: "$2,100.75",
+      totalSpent: "$46.75",
       status: "VIP",
       rating: 5.0
     },
     {
       id: "CUST-004",
       name: "Sarah Wilson",
-      email: "sarah@example.com",
+      email: "jahidulislamweb2003@gmail.com",
       phone: "+1 (555) 456-7890",
       location: "Houston, TX",
       joinDate: "2023-10-05",
@@ -145,10 +145,7 @@ const Customers = () => {
             <div className="flex flex-col md:flex-row gap-4">
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-                <Input
-                  placeholder="Search customers by name, email, or phone..."
-                  className="pl-10 bg-background/50 border-border/50 focus:border-primary"
-                />
+                <Input placeholder="Search customers by name, email, or phone..." className="pl-10 bg-background/50 border-border/50 focus:border-primary"/>
               </div>
               <Button variant="outline" className="flex items-center space-x-2">
                 <Filter className="h-4 w-4" />
@@ -274,6 +271,6 @@ const Customers = () => {
       </div>
     </DashboardLayout>
   );
-};
+ };
 
-export default Customers;
+ export default Customers;

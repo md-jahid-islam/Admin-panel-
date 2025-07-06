@@ -13,9 +13,9 @@ import {
   CheckCircle,
   Clock,
   AlertCircle
-} from "lucide-react";
+ } from "lucide-react";
 
-const Orders = () => {
+ const Orders = () => {
   const orders = [
     { 
       id: "#ORD-3210", 
@@ -112,10 +112,7 @@ const Orders = () => {
             <div className="flex flex-col md:flex-row gap-4">
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-                <Input
-                  placeholder="Search orders by ID, customer, or email..."
-                  className="pl-10 bg-background/50 border-border/50 focus:border-primary"
-                />
+                <Input placeholder="Search orders by ID, customer, or email..." className="pl-10 bg-background/50 border-border/50 focus:border-primary"/>
               </div>
               <Button variant="outline" className="flex items-center space-x-2">
                 <Filter className="h-4 w-4" />
@@ -217,6 +214,6 @@ const Orders = () => {
       </div>
     </DashboardLayout>
   );
-};
+ };
 
-export default Orders;
+ export default Orders;
