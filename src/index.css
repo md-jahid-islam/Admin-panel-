@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Frox Dashboard Design System - Modern Admin Panel Colors */
+
+@layer base {
+  :root {
+    --background: 248 250% 98%;
+    --foreground: 213 27% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 27% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 27% 15%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 262 100% 75%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 213 27% 15%;
+
+    --muted: 220 13% 91%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 262 83% 96%;
+    --accent-foreground: 262 83% 58%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 262 83% 58%;
+
+    --sidebar-bg: 213 27% 15%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-active: 262 83% 58%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 14% 98%));
+    
+    /* Shadows */
+    --shadow-soft: 0 1px 3px 0 hsl(220 13% 91% / 0.3);
+    --shadow-medium: 0 4px 6px -1px hsl(220 13% 91% / 0.4);
+    --shadow-large: 0 10px 25px -3px hsl(220 13% 91% / 0.5);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 213 27% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 213 27% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 213 27% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 262 100% 75%;
+
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 215 28% 17%;
+    --muted-foreground: 217 10% 65%;
+
+    --accent: 215 28% 17%;
+    --accent-foreground: 262 83% 58%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 262 83% 58%;
+
+    --sidebar-bg: 213 27% 5%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-active: 262 83% 58%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(215 28% 15%));
+    
+    /* Dark mode shadows */
+    --shadow-soft: 0 1px 3px 0 hsl(213 27% 5% / 0.5);
+    --shadow-medium: 0 4px 6px -1px hsl(213 27% 5% / 0.6);
+    --shadow-large: 0 10px 25px -3px hsl(213 27% 5% / 0.7);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
