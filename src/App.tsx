@@ -15,8 +15,8 @@ import NotFound from "./pages/NotFound";
 
  const queryClient = new QueryClient();
  const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
+ <QueryClientProvider client={queryClient}>
+  <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
@@ -37,4 +37,4 @@ import NotFound from "./pages/NotFound";
  );
 
  export default App;
-//  fssdiorut, zsdlkfja,m zfjas
+ //  hbdsfjahsdbjfkbhasdjhfbajsdfhj
